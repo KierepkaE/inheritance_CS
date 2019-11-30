@@ -1,6 +1,10 @@
 namespace Inheritance {
 
   public class Text : PresentationObject {
-    // Code specific to Text class
+    public int FontSize { get; set; }
+    public string FontName { get; set; }
+    public void AddHyperlink (string url) {
+      Console.WriteLine ("Url added.");
+    };
   };
 }
